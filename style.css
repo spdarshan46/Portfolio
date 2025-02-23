@@ -871,7 +871,8 @@ footer{
         display: flex;
     }
     .img-hero img{
-        width: 100%;
+        width: 150px;
+        height:150px;
     }
     .text-animate{
         width: 23.8rem;
