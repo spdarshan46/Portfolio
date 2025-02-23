@@ -869,7 +869,6 @@ footer{
     }
     .rotate-text{
         display: flex;
-        top:2%;
     }
     .img-hero img{
         width: 100%;
@@ -885,7 +884,7 @@ footer{
         padding: 10px 15px;
     }
     .img-hero {
-        margin-top: 0.5rem; /* Reduce margin for mobile */
+        margin-top: 0.3rem; /* Reduce margin for mobile */
     }
     .fillter-buttons{
         display: grid;
