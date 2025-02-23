@@ -867,6 +867,9 @@ footer{
     .input-box input {
         width: 100%;
     }
+    .img-hero{
+        padding:20px;
+    }
     .rotate-text{
         display: flex;
     }
