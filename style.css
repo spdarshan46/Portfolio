@@ -293,13 +293,13 @@ section{
 .rotate-text{
     position: absolute;
     top: 4%;
-    left: 0;
+    left: -53px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     padding: 2rem;
-    z-index:10;
+    
 }
 
 .rotate-text span{
@@ -890,40 +890,5 @@ footer{
     .fillter-buttons button{
         width: 100%;
         padding: 13px;
-    }
-}
-
-@media(max-width: 768px) {
-    .rotate-text {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        padding: 2rem;
-        z-index: 10;
-    }
-
-    .rotate-text span {
-        width: 250px;
-        height: 250px;
-        background: red;
-        border: 6px solid #eaeef0;
-        border-radius: 50%;
-        z-index: 1;
-        overflow: hidden;
-    }
-
-    .rotate-text .text {
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        background: #f2f6fb;
-        border-radius: 50%;
-        box-shadow: 0 1px 6px 5.94px rgba(0, 0, 0, 0.2);
-        animation: rotateText 30s linear infinite;
     }
 }
