@@ -867,22 +867,11 @@ footer{
     .input-box input {
         width: 100%;
     }
-    .rotate-text {
-        display: flex; /* Ensure it's displayed */
-        justify-content: center; /* Center the content */
-        align-items: center; /* Vertically center */
-        position: relative; /* Make sure it can be positioned correctly */
-        top: 10%; /* Adjust the top position if needed */
+    .rotate-text{
+        display: flex;
     }
-
-    .img-hero img {
-        width: 100%;  /* Ensure the image scales properly */
-        height: auto; /* Maintain aspect ratio */
-    }
-    .rotate-text span {
-        width: 200px;  /* Adjust to a suitable size */
-        height: 200px; /* Adjust to a suitable size */
-        z-index:;
+    .img-hero img{
+        width: 100%;
     }
     .text-animate{
         width: 23.8rem;
