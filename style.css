@@ -871,8 +871,7 @@ footer{
         display: flex;
     }
     .img-hero img{
-        width: 150px;
-        height:150px;
+        width: 100%;
     }
     .text-animate{
         width: 23.8rem;
@@ -885,7 +884,7 @@ footer{
         padding: 10px 15px;
     }
     .img-hero {
-        width:60%; 
+        width:150px; 
     }
     .fillter-buttons{
         display: grid;
