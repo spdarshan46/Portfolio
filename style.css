@@ -883,6 +883,9 @@ footer{
     .about-btn button{
         padding: 10px 15px;
     }
+    .img-hero {
+        width: 60%; /* Reduce the width of the image container */
+    }
     .fillter-buttons{
         display: grid;
         grid-gap: 1rem;
