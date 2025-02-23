@@ -867,18 +867,11 @@ footer{
     .input-box input {
         width: 100%;
     }
-    .img-hero{
-        padding:20px;
-        width:auto;
-        height:auto;
-        margin:0;
-    }
     .rotate-text{
         display: flex;
     }
     .img-hero img{
         width: 100%;
-        height:auto;
     }
     .text-animate{
         width: 23.8rem;
