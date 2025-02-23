@@ -892,3 +892,32 @@ footer{
         padding: 13px;
     }
 }
+
+
+@media(max-width: 768px) {
+    /* Reduce image size for mobile */
+    .img-hero img {
+        width: 250px; /* Smaller image for mobile */
+        height: 250px;
+        right: 0; /* Center the image */
+    }
+
+    /* Adjust the rotate-text positioning */
+    .rotate-text {
+        top: 20%; /* Adjust vertical position */
+        left: 0; /* Center horizontally */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    /* Adjust circle size for mobile */
+    .rotate-text span {
+        width: 200px; /* Smaller circle size */
+        height: 200px;
+    }
+
+    /* Adjust text size inside the circle */
+    .rotate-text .text {
+        width: 220px; /* Smaller text container */
+        height: 220px;
+    }
+}
