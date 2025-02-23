@@ -884,7 +884,7 @@ footer{
         padding: 10px 15px;
     }
     .img-hero {
-        margin-top: 1.5rem; /* Reduce margin for mobile */
+        margin-top: 1rem; /* Reduce margin for mobile */
     }
     .fillter-buttons{
         display: grid;
