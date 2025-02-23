@@ -880,7 +880,6 @@ footer{
     .img-hero img {
         width: 100%; /* Image takes full width of its container */
         height: auto; /* Maintain the aspect ratio of the image */
-        display: block; /* Remove any unwanted spacing below the image */
     }
     .text-animate{
         width: 23.8rem;
