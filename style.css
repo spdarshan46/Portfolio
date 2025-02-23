@@ -883,10 +883,6 @@ footer{
     .about-btn button{
         padding: 10px 15px;
     }
-    .img-hero {
-        width: 100%;
-        margin-top: 2rem;
-    }
     .fillter-buttons{
         display: grid;
         grid-gap: 1rem;
