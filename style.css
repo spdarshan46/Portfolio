@@ -869,7 +869,6 @@ footer{
     }
     .rotate-text{
         display: flex;
-         position: relative;
     }
     .img-hero img{
         width: 100%;
@@ -883,6 +882,9 @@ footer{
     }
     .about-btn button{
         padding: 10px 15px;
+    }
+    .img-hero {
+        margin-top: 1.5rem; /* Reduce margin for mobile */
     }
     .fillter-buttons{
         display: grid;
