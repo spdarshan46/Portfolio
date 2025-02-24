@@ -32,31 +32,7 @@ This project is built using the following technologies:
 - **GitHub Pages:** For hosting and deploying the website online.
 
 
-### **4. Features and Functionality**
-
-#### **4.1 Home Section**
-
-The **Home** section introduces the developer with an animated text effect that shows "Tech Innovator." The section includes a brief introduction and buttons for downloading the resume and hiring the developer.
-
-#### **4.2 About Me Section**
-
-The **About Me** section provides a deeper look at the developer’s background, including skills in Java, Python, web development, and cybersecurity. It also includes a "Main Skills," "Certificates," and "Education" buttons that show respective content.
-
-#### **4.3 Projects Section**
-
-This section highlights key projects. Each project is accompanied by a description, technology used, and links to the GitHub repositories or live projects (where available).
-
-#### **4.4 Skills Section**
-
-The **Skills** section includes a set of circular progress bars that visually represent proficiency in various skills, such as Python, Java, JavaScript, and backend technologies.
-
-#### **4.5 Contact Section**
-
-The **Contact** section contains a form that users can fill out to send messages or inquiries. The form is integrated with Formspree to send the details directly to the developer's email address.
-
-
-
-### **5. Installation**
+### **4. Installation**
 
 To run this portfolio locally:
 
