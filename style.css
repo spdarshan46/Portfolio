@@ -868,7 +868,7 @@ footer{
         width: 100%;
     }
     .rotate-text{
-        display: none;
+        display: flex;
     }
     .img-hero img{
         width: 100%;
