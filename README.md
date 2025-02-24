@@ -70,15 +70,8 @@ To run this portfolio locally:
    cd portfolio
    ```
 
-3. Install the dependencies (if any, such as for React):
-   ```
-   npm install
-   ```
+3. VS Code Live Server Extension:
 
-4. Start the development server:
-   ```
-   npm start
-   ```
-
-5. Open your browser and visit `http://localhost:3000`.
-
+   Open the folder in VS Code.
+   Install the Live Server extension.
+   Right-click '''index.html''' → "Open with       Live Server".4
