@@ -68,7 +68,12 @@ document.querySelector('form').addEventListener('submit', function(e) {
         } else {
             alert('Oops, something went wrong. Please try again later.');
         }
+    })
+    .catch(error => {
+        alert('An error occurred. Please try again later.');
+        console.error('Error:', error);
     });
+});
 
 
 //percentage

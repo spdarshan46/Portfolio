@@ -19,7 +19,7 @@
     --hover-box-shadow:rgba(0,0,0,0.19)0px 10px 20px,
                        rgba(0,0,0,0.23)0px 6px 6px;     
     --gradient-white-bg2:linear-gradient(98deg,#e5eef7 0%,#fff 100%);                                                          
-} 
+}
 
 a{
     text-decoration: none;
@@ -868,7 +868,7 @@ footer{
         width: 100%;
     }
     .rotate-text{
-        display: flex;
+        display: none;
     }
     .img-hero img{
         width: 100%;
