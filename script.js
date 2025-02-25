@@ -50,33 +50,33 @@ window.addEventListener("scroll", activeMenu);
 
 //mail
 
-document.querySelector('form').addEventListener('submit', function (e) {
+document.querySelector('form').addEventListener('submit', async function (e) {
     e.preventDefault(); // Prevent default form submission behavior
 
     var form = this;
     var formData = new FormData(form);
 
-    fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: {
-            'Accept': 'application/json' // Ensures Formspree responds with JSON
-        }
-    })
-    .then(response => response.json()) // Parse response as JSON
-    .then(data => {
-        if (data.ok) {
+    try {
+        let response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' } // Ensure JSON response
+        });
+
+        let data = await response.json(); // Convert response to JSON
+
+        if (response.ok && data.ok) {
             alert('Your message has been sent! Thank you for reaching out.');
-            form.reset();  // Clear form fields after successful submission
+            form.reset(); // Reset form fields
         } else {
-            alert('Oops, something went wrong. Please try again later.');
+            alert('Submission failed. Please try again.');
         }
-    })
-    .catch(error => {
+    } catch (error) {
         console.error('Error:', error);
-        alert('Oops, something went wrong. Please check your internet connection and try again.');
-    });
+        alert('Oops! Something went wrong. Check your connection and try again.');
+    }
 });
+
 
 
 //percentage
