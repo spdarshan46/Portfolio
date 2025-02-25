@@ -871,7 +871,6 @@ footer{
         display: flex;
         top: 0;
         left: 0;
-        position: fixed;
     }
     .img-hero img{
         width: 100%;
