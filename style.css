@@ -869,24 +869,15 @@ footer{
     }
     .rotate-text{
         display: flex;
+        top: 0;
+        left: 0;
+        position: fixed;
     }
     .img-hero img{
         width: 100%;
         top:0;
         left:0;
         position:fixed;
-    }
-    .overlay{
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        position: fixed;
-        background: rgba(0,0,0,0.5);
-        z-index: 8;
-        opacity: 0;
-        transform: .3s;
-        pointer-events: none;
     }
     .text-animate{
         width: 23.8rem;
