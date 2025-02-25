@@ -50,25 +50,32 @@ window.addEventListener("scroll", activeMenu);
 
 //mail
 
-document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevents the form from submitting immediately
+document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission behavior
 
     var form = this;
     var formData = new FormData(form);
-    
-    // Send the data to Formspree using the Fetch API (you can also use Ajax)
+
     fetch(form.action, {
         method: 'POST',
         body: formData,
+        headers: {
+            'Accept': 'application/json' // Ensures Formspree responds with JSON
+        }
     })
-    .then(response => {
-        if (response.ok) {
+    .then(response => response.json()) // Parse response as JSON
+    .then(data => {
+        if (data.ok) {
             alert('Your message has been sent! Thank you for reaching out.');
-            form.reset();  // Reset form after submission
+            form.reset();  // Clear form fields after successful submission
         } else {
             alert('Oops, something went wrong. Please try again later.');
         }
     })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Oops, something went wrong. Please check your internet connection and try again.');
+    });
 });
 
 
