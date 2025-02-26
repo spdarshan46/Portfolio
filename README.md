@@ -25,8 +25,6 @@ This project is built using the following technologies:
 - **HTML5:** For the basic structure and content of the website.
 - **CSS3:** For styling and responsive design, ensuring the portfolio works across all devices.
 - **JavaScript:** For adding interactivity to the website, including animations and dynamic content.
-- **React.js (Optional for future updates):** To make the website more dynamic and scalable (if you choose to upgrade it in the future).
-- **Swiper.js:** For creating smooth transitions in the project carousel.
 - **Boxicons:** For icons used throughout the portfolio.
 - **Formspree:** For handling form submissions and sending contact messages to the developer’s email.
 - **GitHub Pages:** For hosting and deploying the website online.
