@@ -49,3 +49,7 @@ To run this portfolio locally:
    Open the folder in VS Code.
    Install the Live Server extension.
    Right-click '''index.html''' → "Open with       Live Server".4
+
+   ### Output:
+   https://spdarshan46.github.io/Portfolio
+   
