@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 // ==================== Dark / Light Mode ====================
 const themeToggle = document.getElementById("themeToggle");
 const icon = themeToggle.querySelector("i");
@@ -136,7 +137,6 @@ themeToggle.addEventListener("click", () => {
         localStorage.setItem("theme", "light");
     }
 });
-
 // ==================== INSPECT DISABLE (SAFE) ====================
 
 // Disable right-click
@@ -162,6 +162,5 @@ document.addEventListener("keydown", function (e) {
         e.preventDefault();
     }
 });
-
 
 
