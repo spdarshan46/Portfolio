@@ -115,19 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-inspect
-
-document.addEventListener('contextmenu', function (e) {
-    e.preventDefault(); // Disable right-click
-});
-
-document.addEventListener('keydown', function (e) {
-    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
-        e.preventDefault();  // Disable F12 and Ctrl+Shift+I
-    }
-});
-
 // ==================== Dark / Light Mode ====================
 const themeToggle = document.getElementById("themeToggle");
 const icon = themeToggle.querySelector("i");
@@ -150,4 +137,15 @@ themeToggle.addEventListener("click", () => {
     }
 });
 
+inspect
+
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault(); // Disable right-click
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+        e.preventDefault();  // Disable F12 and Ctrl+Shift+I
+    }
+});
 
