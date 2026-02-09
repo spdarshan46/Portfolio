@@ -137,15 +137,30 @@ themeToggle.addEventListener("click", () => {
     }
 });
 
-inspect
+// ==================== INSPECT DISABLE (SAFE) ====================
 
-document.addEventListener('contextmenu', function (e) {
-    e.preventDefault(); // Disable right-click
+// Disable right-click
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
 });
 
-document.addEventListener('keydown', function (e) {
-    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
-        e.preventDefault();  // Disable F12 and Ctrl+Shift+I
+// Disable key shortcuts
+document.addEventListener("keydown", function (e) {
+
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
+
+    // Ctrl + Shift + I / J / C
+    if (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) {
+        e.preventDefault();
+    }
+
+    // Ctrl + U (view source)
+    if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
     }
 });
+
 
