@@ -1,315 +1,568 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S P Darshan · Backend & AI Engineer</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- boxicons -->
-    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>S P Darshan · Backend & AI Engineer</title>
+<meta name="description" content="S P Darshan - Backend Engineer specializing in Django, React, and AI-integrated systems. Creator of PUNDX finance platform. Available for Backend, Full-Stack and AI opportunities.">
+<meta name="keywords" content="Backend Developer, Django Developer, React Developer, AI Engineer, Python Developer, S P Darshan, PUNDX, Full Stack Developer, Karnataka">
+<meta name="author" content="S P Darshan">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="S P Darshan · Backend & AI Engineer">
+<meta property="og:description" content="Backend Engineer specializing in Django, React, and AI-integrated systems. Creator of PUNDX finance platform.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://spdarshan46.github.io/Portfolio/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="S P Darshan · Backend & AI Engineer">
+<meta name="twitter:description" content="Backend Engineer specializing in Django, React, and AI-integrated systems.">
+<link rel="canonical" href="https://spdarshan46.github.io/Portfolio/">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="header-content">
-            <h1><span class="gradient-text">S P Darshan</span></h1>
-            <ul class="navlist" id="navlist">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="right-header">
-                <a href="https://wa.me/+917676324020" class="btn">Let's talk</a>
-                <div class="menu-icon" id="menuIcon">
-                    <div class="bar"></div>
-                </div>
-                <div class="theme-toggle" id="themeToggle">
-                    <i class='bx bx-moon'></i>
-                </div>
-            </div>
+<!-- MOBILE NAV OVERLAY -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#home" onclick="closeMobileNav()">Home</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#skills" onclick="closeMobileNav()">Skills</a>
+  <a href="#projects" onclick="closeMobileNav()">Projects</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  <div class="mobile-nav-social">
+    <a href="https://github.com/spdarshan46" target="_blank"><i class='bx bxl-github'></i></a>
+    <a href="https://linkedin.com/in/spdarshan252" target="_blank"><i class='bx bxl-linkedin'></i></a>
+    <a href="mailto:spdarshan252@gmail.com"><i class='bx bx-envelope'></i></a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="header-content">
+    <a href="#home" class="logo-text gradient-text">S P Darshan</a>
+    <ul class="navlist" id="navlist">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="right-header">
+      <a href="https://wa.me/+917676324020" target="_blank" class="header-lets-talk">
+        <i class='bx bxl-whatsapp'></i> Let's talk
+      </a>
+      <div class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle theme">
+        <i class='bx bx-moon' id="themeIcon"></i>
+      </div>
+      <div class="menu-icon" id="menuIcon" onclick="toggleMobileNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg">
+    <div class="hero-blob blob1"></div>
+    <div class="hero-blob blob2"></div>
+    <div class="hero-blob blob3"></div>
+    <div class="hero-grid-bg"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">Backend Developer · AI-Driven Systems</div>
+      <h1>Engineering scalable<br><span class="gradient-text">backend systems</span><br>with AI solutions</h1>
+      <p class="hero-desc">I design production-ready REST APIs, scalable architectures, and AI-powered applications. 7+ projects with measurable impact.</p>
+      <div class="quick-info">
+        <a href="mailto:spdarshan252@gmail.com" class="info-chip">
+          <i class='bx bx-envelope'></i> spdarshan252@gmail.com
+        </a>
+        <a href="https://github.com/spdarshan46" target="_blank" class="info-chip">
+          <i class='bx bxl-github'></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/spdarshan252" target="_blank" class="info-chip">
+          <i class='bx bxl-linkedin'></i> LinkedIn
+        </a>
+      </div>
+      <div class="hero-actions">
+        <a href="img/Darshan.pdf" class="btn" download>
+          <i class='bx bx-download'></i> Download Resume
+        </a>
+        <a href="#projects" class="btn-outline">
+          <i class='bx bx-code-block'></i> View Projects
+        </a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-img-card">
+        <img src="img/hero.jpg" alt="S P Darshan"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="hero-img-placeholder" style="display:none">
+          <div class="avatar-big">SPD</div>
+          <span style="color:var(--muted);font-size:.85rem;font-weight:600">S P Darshan</span>
+          <span style="color:var(--muted2);font-size:.75rem">Backend Engineer</span>
         </div>
-    </header>
+      </div>
+      <div class="floating-badge fb1">
+        <div class="fb-num">7+</div>
+        <div class="fb-label">Projects</div>
+      </div>
+      <div class="floating-badge fb2">
+        <div class="fb-num">8.0</div>
+        <div class="fb-label">CGPA</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <main>
-        <!-- HERO -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="hero-badge">Backend Developer · AI-Driven Systems</div>
-                <h1>
-                    Engineering scalable<br>
-                    <span class="gradient-text">backend systems</span><br>
-                    with AI solutions
-                </h1>
-                <p class="hero-desc">
-                    I design production-ready REST APIs, scalable architectures, and AI-powered
-                    applications. 7+ projects with measurable impact.
-                </p>
-                <div class="quick-info">
-                    <a href="mailto:spdarshan252@gmail.com" class="info-chip">
-                        <i class='bx bx-envelope'></i> spdarshan252@gmail.com
-                    </a>
-                    <a href="https://github.com/spdarshan46" target="_blank" class="info-chip">
-                        <i class='bx bxl-github'></i> GitHub
-                    </a>
-                    <a href="https://linkedin.com/in/spdarshan252" target="_blank" class="info-chip">
-                        <i class='bx bxl-linkedin'></i> LinkedIn
-                    </a>
-                </div>
-                <div class="hero-actions">
-                    <a href="img/Darshan.pdf" class="btn">Download Resume</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="img/123.png" alt="S P Darshan">
-            </div>
-        </section>
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <div class="about-img">
+        <img src="img/logo.jpeg" alt="About S P Darshan"
+        this.nextElementSibling.style.display='flex'">
+        <div class="about-img-placeholder" style="display:none">🖥️</div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">7+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Years</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8.0</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2×</div>
+          <div class="stat-label">Internships</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-content reveal reveal-d1">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Backend-focused engineer building <span class="gradient-text">scalable systems</span></h2>
+      <p>I'm a Computer Science Engineering student specializing in backend development and full-stack systems. My core strength lies in designing clean architectures, secure REST APIs, and optimized database structures.</p>
+      <p>I actively integrate AI tools into my workflow for faster development and smarter automation. My goal is to build high-performance systems that are scalable and production-ready.</p>
+      <div class="about-highlights">
+        <span class="highlight-pill"><i class='bx bxl-python'></i> Python Backend</span>
+        <span class="highlight-pill"><i class='bx bx-data'></i> Database Design</span>
+        <span class="highlight-pill"><i class='bx bx-brain'></i> AI Integration</span>
+        <span class="highlight-pill"><i class='bx bx-server'></i> REST APIs</span>
+        <span class="highlight-pill"><i class='bx bxl-react'></i> React</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- ABOUT -->
-        <section id="about" class="about">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="img/demo1.jpeg" alt="About">
-                </div>
-                <div class="about-content">
-                    <h2><span class="gradient-text">About Me</span></h2>
-                    <h3>Backend-focused engineer building scalable systems</h3>
-                    <p>
-                        I'm a Computer Science Engineering student specializing in backend development
-                        and full-stack systems. My core strength lies in designing clean architectures,
-                        secure REST APIs, and optimized database structures.
-                    </p>
-                    <p>
-                        I actively integrate AI tools into my workflow for faster development and smarter
-                        automation. My goal is to build high-performance systems that are scalable and production-ready.
-                    </p>
-                    <div class="about-highlight">
-                        <span class="highlight-item"><i class='bx bxl-python'></i> Python Backend</span>
-                        <span class="highlight-item"><i class='bx bx-data'></i> Database Design</span>
-                        <span class="highlight-item"><i class='bx bx-brain'></i> AI Integration</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-header reveal">
+    <div class="section-label" style="justify-content:center">Technical Skills</div>
+    <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
+    <p class="section-sub">Filter by category</p>
+  </div>
+  <div class="skill-filters reveal reveal-d1">
+    <button class="filter-btn active" onclick="filterSkills('all',this)">All</button>
+    <button class="filter-btn" onclick="filterSkills('backend',this)">Backend</button>
+    <button class="filter-btn" onclick="filterSkills('frontend',this)">Frontend</button>
+    <button class="filter-btn" onclick="filterSkills('database',this)">Database</button>
+    <button class="filter-btn" onclick="filterSkills('tools',this)">Tools & AI</button>
+  </div>
+  <div class="skills-grid reveal reveal-d2" id="skillsGrid">
+    <div class="skill-card" data-cat="backend"><i class='bx bxl-python'></i> Python</div>
+    <div class="skill-card" data-cat="backend"><i class='bx bxl-django'></i> Django</div>
+    <div class="skill-card" data-cat="backend"><i class='bx bxl-flask'></i> Flask</div>
+    <div class="skill-card" data-cat="frontend"><i class='bx bxl-react'></i> React</div>
+    <div class="skill-card" data-cat="frontend"><i class='bx bxl-html5'></i> HTML5</div>
+    <div class="skill-card" data-cat="frontend"><i class='bx bxl-css3'></i> CSS3</div>
+    <div class="skill-card" data-cat="frontend"><i class='bx bxl-javascript'></i> JavaScript</div>
+    <div class="skill-card" data-cat="frontend"><i class='bx bxl-bootstrap'></i> Bootstrap</div>
+    <div class="skill-card" data-cat="database"><i class='bx bxl-mongodb'></i> MongoDB</div>
+    <div class="skill-card" data-cat="database"><i class='bx bx-data'></i> PostgreSQL</div>
+    <div class="skill-card" data-cat="database"><i class='bx bx-data'></i> MySQL</div>
+    <div class="skill-card" data-cat="tools"><i class='bx bxl-git'></i> Git</div>
+    <div class="skill-card" data-cat="tools"><i class='bx bxl-github'></i> GitHub</div>
+    <div class="skill-card" data-cat="tools"><i class='bx bx-terminal'></i> Postman</div>
+    <div class="skill-card" data-cat="tools"><i class='bx bx-cloud'></i> Render</div>
+    <div class="skill-card" data-cat="tools"><i class='bx bx-chip'></i> ChatGPT</div>
+    <div class="skill-card" data-cat="tools"><i class='bx bx-bot'></i> DeepSeek</div>
+    <div class="skill-card" data-cat="tools"><i class='bx bx-star'></i> Gemini</div>
+  </div>
+</section>
 
-        <!-- SKILLS -->
-        <section id="skills">
-            <div class="skills-header">
-                <h2><span class="gradient-text">Technical Skills</span></h2>
-                <p>Filter by category</p>
-            </div>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-wrap">
 
-            <div class="skill-filters">
-                <button class="filter-btn active" onclick="filterSkills('all', event)">All</button>
-                <button class="filter-btn" onclick="filterSkills('backend', event)">Backend</button>
-                <button class="filter-btn" onclick="filterSkills('frontend', event)">Frontend</button>
-                <button class="filter-btn" onclick="filterSkills('database', event)">Database</button>
-                <button class="filter-btn" onclick="filterSkills('tools', event)">Tools & AI</button>
-            </div>
+    <div class="projects-header-row reveal">
+      <div>
+        <div class="section-label">Projects</div>
+        <h2 class="section-title">
+          Real applications <span class="gradient-text">I've built</span>
+        </h2>
+      </div>
 
-            <div class="skills-grid" id="skills-grid">
-                <!-- Backend -->
-                <div class="skill-card" data-category="backend"><i class='bx bxl-python'></i> Python</div>
-                <div class="skill-card" data-category="backend"><i class='bx bxl-django'></i> Django</div>
-                <div class="skill-card" data-category="backend"><i class='bx bxl-flask'></i> Flask</div>
-                <div class="skill-card" data-category="backend"><i class='bx bxl-java'></i> Java</div>
-                <div class="skill-card" data-category="backend"><i class='bx bxl-nodejs'></i> Node.js</div>
-                <div class="skill-card" data-category="backend"><i class='bx bxl-express'></i> Express</div>
+      <a href="https://github.com/spdarshan46" target="_blank" class="btn-outline">
+        <i class='bx bxl-github'></i> All on GitHub
+      </a>
+    </div>
 
-                <!-- Frontend -->
-                <div class="skill-card" data-category="frontend"><i class='bx bxl-react'></i> React</div>
-                <div class="skill-card" data-category="frontend"><i class='bx bxl-html5'></i> HTML5</div>
-                <div class="skill-card" data-category="frontend"><i class='bx bxl-css3'></i> CSS3</div>
-                <div class="skill-card" data-category="frontend"><i class='bx bxl-javascript'></i> JavaScript</div>
-                <div class="skill-card" data-category="frontend"><i class='bx bxl-bootstrap'></i> Bootstrap</div>
+    <div class="project-grid reveal">
 
-                <!-- Database -->
-                <div class="skill-card" data-category="database"><i class='bx bxl-mongodb'></i> MongoDB</div>
-                <div class="skill-card" data-category="database"><i class='bx bx-data'></i> PostgreSQL</div>
-                <div class="skill-card" data-category="database"><i class='bx bx-data'></i> MySQL</div>
+      <!-- PROJECT 01 -->
+      <a href="https://www.pundx.co.in/" target="_blank" class="project-card featured">
+        <div class="featured-badge">FEATURED</div>
+        <div class="project-num">01 · LIVE PROJECT</div>
 
-                <!-- Tools & AI -->
-                <div class="skill-card" data-category="tools"><i class='bx bxl-git'></i> Git</div>
-                <div class="skill-card" data-category="tools"><i class='bx bx-terminal'></i> Postman</div>
-                <div class="skill-card" data-category="tools"><i class='bx bx-cloud'></i> Render</div>
-                <div class="skill-card" data-category="tools"><i class='bx bx-chip'></i> ChatGPT</div>
-                <div class="skill-card" data-category="tools"><i class='bx bx-bot'></i> DeepSeek</div>
-                <div class="skill-card" data-category="tools"><i class='bx bx-star'></i> Gemini</div>
-            </div>
-        </section>
-        <br>
+        <h3>PUNDX — Smart Finance & Fund Management</h3>
 
-        <br>
+        <p class="project-desc">
+          Full-stack digital platform for community savings groups.
+        </p>
 
-        <br>
-        <!-- PROJECTS -->
-        <section id="projects">
-            <div class="projects-header">
-                <h2><span class="gradient-text">Projects</span></h2>
-                <p>Real applications I've built</p>
-            </div>
-            <div class="project-grid">
-                <a href="https://github.com/spdarshan46/Smart-Nutrition-Label-Analyzer-Health-Score-Predictor"
-                    target="_blank" class="project-card">
-                    <h3>Smart Nutrition Analyzer</h3>
-                    <p class="project-desc">MERN stack + OCR. AI-powered health score prediction with 90%+ accuracy.</p>
-                    <div class="project-stack">
-                        <span class="stack-pill">React</span>
-                        <span class="stack-pill">Node.js</span>
-                        <span class="stack-pill">MongoDB</span>
-                        <span class="stack-pill">OCR</span>
-                    </div>
-                    <span class="project-link">GitHub →</span>
-                </a>
+        <ul class="project-feats">
+          <li>Cycle-based savings with automatic penalty calculation</li>
+          <li>Loan lifecycle management with EMI tracking</li>
+          <li>Role-based authentication using secure JWT tokens</li>
+          <li>Financial analytics dashboard with PDF reports</li>
+        </ul>
 
-                <a href="https://github.com/Mr-APS-22/SDMS_project" target="_blank" class="project-card">
-                    <h3>Campus Flow</h3>
-                    <p class="project-desc">Real-time campus management with Django + PostgreSQL, Flutter frontend.</p>
-                    <div class="project-stack">
-                        <span class="stack-pill">Django</span>
-                        <span class="stack-pill">PostgreSQL</span>
-                        <span class="stack-pill">Flutter</span>
-                    </div>
-                    <span class="project-link">GitHub →</span>
-                </a>
-
-                <a href="https://github.com/spdarshan46/smart-parking-iot" target="_blank" class="project-card">
-                    <h3>Smart Parking IoT</h3>
-                    <p class="project-desc">Django REST API + IoT simulator with real-time updates every 15 seconds.</p>
-                    <div class="project-stack">
-                        <span class="stack-pill">Django REST</span>
-                        <span class="stack-pill">SQLite</span>
-                        <span class="stack-pill">API</span>
-                    </div>
-                    <span class="project-link">GitHub →</span>
-                </a>
-
-                <a href="https://github.com/Mr-APS-22/GECC" target="_blank" class="project-card">
-                    <h3>Student DBMS</h3>
-                    <p class="project-desc">Flask + MySQL with CRUD operations and authentication.</p>
-                    <div class="project-stack">
-                        <span class="stack-pill">Flask</span>
-                        <span class="stack-pill">MySQL</span>
-                        <span class="stack-pill">React.js</span>
-
-                    </div>
-                    <span class="project-link">GitHub →</span>
-                </a>
-
-                <a href="https://github.com/spdarshan46/Agro-Weather-Advisor" target="_blank" class="project-card">
-                    <h3>Agro-Weather-Advisor</h3>
-                    <p class="project-desc">Weather API + crop prediction for 10+ crops with 95% accuracy.</p>
-                    <div class="project-stack">
-                        <span class="stack-pill">JavaScript</span>
-                        <span class="stack-pill">API</span>
-                        <span class="stack-pill">HTML/CSS</span>
-                    </div>
-                    <span class="project-link">GitHub →</span>
-                </a>
-
-                <a href="https://github.com/spdarshan46/portfolio" target="_blank" class="project-card">
-                    <h3>Portfolio</h3>
-                    <p class="project-desc">Modern responsive portfolio with dark mode and purple gradient theme.</p>
-                    <div class="project-stack">
-                        <span class="stack-pill">HTML</span>
-                        <span class="stack-pill">CSS</span>
-                        <span class="stack-pill">JS</span>
-                    </div>
-                    <span class="project-link">GitHub →</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE -->
-        <div class="exp-grid">
-            <div class="exp-card">
-                <h3><i class='bx bxl-python'></i> Education</h3>
-                <div class="exp-item">
-                    <div class="exp-date">2023 – 2026</div>
-                    <div class="exp-title">B.E. Computer Science</div>
-                    <div class="exp-place">VTU · CGPA 8.0</div>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-date">2020 – 2023</div>
-                    <div class="exp-title">Diploma in CSE</div>
-                    <div class="exp-place">Govt Polytechnic · 8.09 CGPA</div>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-date">2017 – 2020</div>
-                    <div class="exp-title">SSLC</div>
-                    <div class="exp-place">JSS Boys High School · 85.9%</div>
-                </div>
-            </div>
-            <div class="exp-card">
-                <h3><i class='bx bx-briefcase'></i> Experience</h3>
-                <div class="exp-item">
-                    <div class="exp-date">2024 – Present</div>
-                    <div class="exp-title">Java Full-Stack Intern</div>
-                    <div class="exp-place">Inventron</div>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-date">2023</div>
-                    <div class="exp-title">Cybersecurity Intern</div>
-                    <div class="exp-place">Ultismart Infotech</div>
-                </div>
-            </div>
+        <div class="project-stack">
+          <span class="stack-pill">Django REST</span>
+          <span class="stack-pill">React</span>
+          <span class="stack-pill">PostgreSQL</span>
+          <span class="stack-pill">JWT</span>
+          <span class="stack-pill">Vercel</span>
         </div>
 
-        <!-- CONTACT -->
-        <section id="contact">
-            <div class="contact-panel">
-                <div class="contact-left">
-                    <h2><span class="gradient-text">Let's connect</span></h2>
-                    <p>Backend · Full-Stack · AI opportunities</p>
-                    <div class="contact-links">
-                        <a href="mailto:spdarshan252@gmail.com" class="contact-link">
-                            <i class='bx bx-envelope'></i> spdarshan252@gmail.com
-                        </a>
-                        <a href="tel:+917676324020" class="contact-link">
-                            <i class='bx bx-phone'></i> +91 7676324020
-                        </a>
-                        <a href="https://github.com/spdarshan46" target="_blank" class="contact-link">
-                            <i class='bx bxl-github'></i> github.com/spdarshan46
-                        </a>
-                        <a href="https://linkedin.com/in/spdarshan252" target="_blank" class="contact-link">
-                            <i class='bx bxl-linkedin'></i> linkedin.com/in/spdarshan252
-                        </a>
-                        <a href="https://instagram.com/spdarshan252" target="_blank" class="contact-link">
-                            <i class='bx bxl-instagram'></i> @spdarshan252
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <form action="https://formspree.io/f/xbldbrdy" method="POST" class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email address" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="send-btn">
-                            <span>Send Message</span>
-                            <i class='bx bx-send'></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
+        <span class="project-link">
+          pundx.co.in <i class='bx bx-link-external'></i>
+        </span>
+      </a>
 
-    <footer class="footer">
-        <p>© 2025 S P Darshan · Backend Engineer | AI-Integrated Applications</p>
-    </footer>
+      <!-- PROJECT 02 -->
+      <a href="https://github.com/spdarshan46/ai-attendace" target="_blank" class="project-card">
+
+        <div class="project-num">02</div>
+
+        <h3>AI Attendance System</h3>
+
+        <p class="project-desc">
+          Face recognition attendance system using OpenCV.
+        </p>
+
+        <ul class="project-feats">
+          <li>Face detection and recognition using OpenCV</li>
+          <li>Automatic attendance marking from webcam</li>
+          <li>Student face dataset training system</li>
+          <li>Attendance logs saved to CSV/database</li>
+        </ul>
+
+        <div class="project-stack">
+          <span class="stack-pill">Python</span>
+          <span class="stack-pill">OpenCV</span>
+          <span class="stack-pill">AI/ML</span>
+        </div>
+
+        <span class="project-link">GitHub →</span>
+      </a>
+
+      <!-- PROJECT 03 -->
+      <a href="https://github.com/spdarshan46/Smart-Nutrition-Label-Analyzer-Health-Score-Predictor" target="_blank" class="project-card">
+
+        <div class="project-num">03</div>
+
+        <h3>Smart Nutrition Analyzer</h3>
+
+        <p class="project-desc">
+          MERN stack + OCR with AI health score prediction.
+        </p>
+
+        <ul class="project-feats">
+          <li>OCR scanning of nutrition labels from images</li>
+          <li>AI model calculates food health score</li>
+          <li>Ingredient analysis and nutrition breakdown</li>
+          <li>Interactive dashboard with food insights</li>
+        </ul>
+
+        <div class="project-stack">
+          <span class="stack-pill">React</span>
+          <span class="stack-pill">Node.js</span>
+          <span class="stack-pill">MongoDB</span>
+          <span class="stack-pill">OCR</span>
+        </div>
+
+        <span class="project-link">GitHub →</span>
+      </a>
+
+      <!-- PROJECT 04 -->
+      <a href="https://github.com/Mr-APS-22/SDMS_project" target="_blank" class="project-card">
+
+        <div class="project-num">04</div>
+
+        <h3>Campus Flow</h3>
+
+        <p class="project-desc">
+          Real-time campus management platform.
+        </p>
+
+        <ul class="project-feats">
+          <li>Student registration and academic record system</li>
+          <li>Faculty subject assignment and management</li>
+          <li>Role-based login for HOD, faculty, and students</li>
+          <li>Real-time academic data management</li>
+        </ul>
+
+        <div class="project-stack">
+          <span class="stack-pill">Django</span>
+          <span class="stack-pill">PostgreSQL</span>
+          <span class="stack-pill">Flutter</span>
+        </div>
+
+        <span class="project-link">GitHub →</span>
+      </a>
+
+      <!-- PROJECT 05 -->
+      <a href="https://github.com/spdarshan46/smart-parking-iot" target="_blank" class="project-card">
+
+        <div class="project-num">05</div>
+
+        <h3>Smart Parking IoT</h3>
+
+        <p class="project-desc">
+          IoT-based smart parking monitoring system.
+        </p>
+
+        <ul class="project-feats">
+          <li>Real-time parking slot availability monitoring</li>
+          <li>IoT simulator sending updates every 15 seconds</li>
+          <li>Django REST API for parking data</li>
+          <li>Live parking status dashboard</li>
+        </ul>
+
+        <div class="project-stack">
+          <span class="stack-pill">Django REST</span>
+          <span class="stack-pill">SQLite</span>
+          <span class="stack-pill">API</span>
+        </div>
+
+        <span class="project-link">GitHub →</span>
+      </a>
+
+      <!-- PROJECT 06 -->
+      <a href="https://github.com/Mr-APS-22/GECC" target="_blank" class="project-card">
+
+        <div class="project-num">06</div>
+
+        <h3>Student DBMS</h3>
+
+        <p class="project-desc">
+          Web-based student database management system.
+        </p>
+
+        <ul class="project-feats">
+          <li>Student CRUD operations and record management</li>
+          <li>User authentication and login system</li>
+          <li>Secure database storage with MySQL</li>
+          <li>Admin dashboard for managing student data</li>
+        </ul>
+
+        <div class="project-stack">
+          <span class="stack-pill">Flask</span>
+          <span class="stack-pill">MySQL</span>
+          <span class="stack-pill">React.js</span>
+        </div>
+
+        <span class="project-link">GitHub →</span>
+      </a>
+
+      <!-- PROJECT 07 -->
+      <a href="https://github.com/spdarshan46/Agro-Weather-Advisor" target="_blank" class="project-card">
+
+        <div class="project-num">07</div>
+
+        <h3>Agro Weather Advisor</h3>
+
+        <p class="project-desc">
+          Weather-based crop recommendation system.
+        </p>
+
+        <ul class="project-feats">
+          <li>Weather API integration for real-time climate data</li>
+          <li>Crop recommendation based on weather conditions</li>
+          <li>Prediction model for crop suitability</li>
+          <li>Farmer-friendly web interface</li>
+        </ul>
+
+        <div class="project-stack">
+          <span class="stack-pill">JavaScript</span>
+          <span class="stack-pill">API</span>
+          <span class="stack-pill">HTML/CSS</span>
+        </div>
+
+        <span class="project-link">GitHub →</span>
+      </a>
+
+      <!-- PROJECT 08 -->
+      <a href="https://spdarshan46.github.io/Portfolio/" target="_blank" class="project-card">
+
+        <div class="project-num">08</div>
+
+        <h3>Portfolio Website</h3>
+
+        <p class="project-desc">
+          Modern responsive developer portfolio website.
+        </p>
+
+        <ul class="project-feats">
+          <li>Responsive layout for mobile and desktop</li>
+          <li>Dark mode interface with gradient theme</li>
+          <li>Animated project and skill sections</li>
+          <li>GitHub and contact integration</li>
+        </ul>
+
+        <div class="project-stack">
+          <span class="stack-pill">HTML</span>
+          <span class="stack-pill">CSS</span>
+          <span class="stack-pill">JS</span>
+        </div>
+
+        <span class="project-link">Live Site →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION & EXPERIENCE -->
+<div class="edu-exp-section">
+  <div class="edu-exp-grid reveal">
+    <div class="exp-card">
+      <div class="exp-card-title"><i class='bx bx-book-open'></i> Education</div>
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-date">2023 – 2026</div>
+          <div class="exp-title">B.E. Computer Science Engineering</div>
+          <div class="exp-place">VTU — Visvesvaraya Technological University</div>
+          <span class="exp-badge">CGPA 8.0</span>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-date">2020 – 2023</div>
+          <div class="exp-title">Diploma in CSE</div>
+          <div class="exp-place">Govt Polytechnic College</div>
+          <span class="exp-badge">8.09 CGPA</span>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-date">2017 – 2020</div>
+          <div class="exp-title">SSLC</div>
+          <div class="exp-place">JSS Boys High School, Chamarajanagar</div>
+          <span class="exp-badge">85.9%</span>
+        </div>
+      </div>
+    </div>
+    <div class="exp-card">
+      <div class="exp-card-title"><i class='bx bx-briefcase'></i> Experience</div>
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-date">2024 – Present</div>
+          <div class="exp-title">Java Full-Stack Intern</div>
+          <div class="exp-place">Inventron</div>
+          <span class="exp-badge">Ongoing</span>
+                <div class="location-mini">
+        <i class='bx bx-map'></i>
+        Banglore, Karnataka, India
+      </div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-date">2023</div>
+          <div class="exp-title">Cybersecurity Intern</div>
+          <div class="exp-place">Ultismart Infotech</div>
+               <div class="location-mini">
+        <i class='bx bx-map'></i>
+        Mysore, Karnataka, India
+      </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-panel">
+      <div class="reveal">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's <span class="gradient-text">connect</span></h2>
+        <p class="contact-left-p">Backend · Full-Stack · AI opportunities</p>
+        <div class="contact-links">
+          <a href="mailto:spdarshan252@gmail.com" class="contact-link">
+            <i class='bx bx-envelope'></i> spdarshan252@gmail.com
+          </a>
+          <a href="tel:+917676324020" class="contact-link">
+            <i class='bx bx-phone'></i> +91 7676324020
+          </a>
+          <a href="https://github.com/spdarshan46" target="_blank" class="contact-link">
+            <i class='bx bxl-github'></i> github.com/spdarshan46
+          </a>
+          <a href="https://linkedin.com/in/spdarshan252" target="_blank" class="contact-link">
+            <i class='bx bxl-linkedin'></i> linkedin.com/in/spdarshan252
+          </a>
+          <a href="https://instagram.com/spdarshan252" target="_blank" class="contact-link">
+            <i class='bx bxl-instagram'></i> @spdarshan252
+          </a>
+        </div>
+      </div>
+      <div class="reveal reveal-d2">
+        <form action="https://formspree.io/f/xbldbrdy" method="POST" class="contact-form" id="contactForm" onsubmit="handleForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" name="email" placeholder="Email address" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="send-btn" id="sendBtn">
+            <span id="btnText">Send Message</span>
+            <i class='bx bx-send'></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 S P Darshan · Backend Engineer | AI-Integrated Applications</p>
+</footer>
 
     <script src="script.js"></script>
 </body>

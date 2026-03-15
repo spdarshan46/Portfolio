@@ -1,83 +1,74 @@
-// Mobile menu
-const menuIcon = document.getElementById('menuIcon');
-const navlist = document.getElementById('navlist');
+/* THEME */
+function toggleTheme(){
+  const h=document.documentElement,dark=h.getAttribute('data-theme')==='dark';
+  h.setAttribute('data-theme',dark?'light':'dark');
+  document.getElementById('themeIcon').className=dark?'bx bx-sun':'bx bx-moon';
+  localStorage.setItem('spd-theme',dark?'light':'dark');
+}
+(()=>{
+  const t=localStorage.getItem('spd-theme')||'dark';
+  document.documentElement.setAttribute('data-theme',t);
+  const i=document.getElementById('themeIcon');
+  if(i&&t==='light')i.className='bx bx-sun';
+})();
 
-menuIcon.addEventListener('click', () => {
-    menuIcon.classList.toggle('active');
-    navlist.classList.toggle('active');
+/* HEADER SCROLL */
+const header=document.getElementById('header');
+window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>50),{passive:true});
+
+/* MOBILE NAV */
+function toggleMobileNav(){
+  const nav=document.getElementById('mobileNav'),icon=document.getElementById('menuIcon');
+  const o=nav.classList.toggle('open');
+  icon.classList.toggle('open',o);
+  document.body.style.overflow=o?'hidden':'';
+}
+function closeMobileNav(){
+  document.getElementById('mobileNav').classList.remove('open');
+  document.getElementById('menuIcon').classList.remove('open');
+  document.body.style.overflow='';
+}
+/* close on outside tap */
+document.getElementById('mobileNav').addEventListener('click',function(e){
+  if(e.target===this)closeMobileNav();
 });
 
-navlist.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') {
-        menuIcon.classList.remove('active');
-        navlist.classList.remove('active');
-    }
-});
+/* ACTIVE NAV */
+const secs=document.querySelectorAll('section[id]');
+const navAs=document.querySelectorAll('.navlist a');
+window.addEventListener('scroll',()=>{
+  let c='';
+  secs.forEach(s=>{if(scrollY>=s.offsetTop-180)c=s.id;});
+  navAs.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+c));
+},{passive:true});
 
-// Theme toggle
-const themeToggle = document.getElementById('themeToggle');
-const icon = themeToggle.querySelector('i');
-
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-theme');
-    icon.classList.replace('bx-moon', 'bx-sun');
+/* SKILLS FILTER */
+function filterSkills(cat,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.skill-card').forEach(c=>{
+    const show=cat==='all'||c.dataset.cat===cat;
+    c.classList.toggle('hidden',!show);
+    if(show){c.style.animation='none';void c.offsetWidth;c.style.animation='fadeUp .3s ease both';}
+  });
 }
 
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-    if (document.body.classList.contains('dark-theme')) {
-        icon.classList.replace('bx-moon', 'bx-sun');
-        localStorage.setItem('theme', 'dark');
-    } else {
-        icon.classList.replace('bx-sun', 'bx-moon');
-        localStorage.setItem('theme', 'light');
-    }
-});
+/* SCROLL REVEAL */
+const ro=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('up');ro.unobserve(e.target);}});
+},{threshold:.07,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 
-// Skill filtering
-window.filterSkills = function (category, event) {
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.classList.remove('active');
-    });
-    event.target.classList.add('active');
-
-    const skills = document.querySelectorAll('.skill-card');
-    skills.forEach(skill => {
-        if (category === 'all' || skill.dataset.category === category) {
-            skill.style.display = 'flex';
-        } else {
-            skill.style.display = 'none';
-        }
-    });
-};
-
-// Contact form
-document.querySelector('#contactForm').addEventListener('submit', async function (e) {
-    e.preventDefault(); // Prevent default form submission behavior
-
-    var form = this;
-    var formData = new FormData(form);
-
-    try {
-        let response = await fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: { 'Accept': 'application/json' } // Ensure JSON response
-        });
-
-        let data = await response.json(); // Convert response to JSON
-
-        if (response.ok && data.ok) {
-            alert('Your message has been sent! Thank you for reaching out.');
-            form.reset(); // Reset form fields
-        } else {
-            alert('Submission failed. Please try again.');
-        }
-    } catch (error) {
-        console.error('Error:', error);
-        alert('Oops! Something went wrong. Check your connection and try again.');
-    }
-});
+/* FORM */
+function handleForm(e){
+  const btn=document.getElementById('sendBtn'),txt=document.getElementById('btnText');
+  txt.textContent='Sending...';btn.disabled=true;
+  setTimeout(()=>{
+    txt.textContent='Sent! ✓';
+    btn.style.background='linear-gradient(135deg,#059669,#10b981)';
+    setTimeout(()=>{txt.textContent='Send Message';btn.disabled=false;btn.style.background='';},3000);
+  },900);
+}
 
 // ==================== INSPECT DISABLE (SAFE) ====================
 
