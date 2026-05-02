@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>S P Darshan · Full Stack Developer</title>
+  <title>S P Darshan | Full Stack Developer (Django + React)</title>
   <meta name="description"
     content="S P Darshan - Full Stack Developer specializing in Django and React. Creator of PUNDX finance platform. Available for Full-Stack and Backend opportunities.">
   <meta name="keywords"
@@ -20,6 +20,7 @@
   <meta name="twitter:title" content="S P Darshan · Full Stack Developer">
   <meta name="twitter:description" content="Full Stack Developer specializing in Django and React.">
   <link rel="canonical" href="https://spdarshan46.github.io/Portfolio/">
+  <link rel="icon" href="img/logo.jpeg" type="image/jpeg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -54,9 +55,9 @@
       </ul>
       <div class="right-header">
         <a href="mailto:spdarshan252@gmail.com" class="header-lets-talk">
-          <i class='bx bx-envelope'></i> Let's talk
+          <i class='bx bx-envelope'></i> <span>Let's talk</span>
         </a>
-        <div class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle theme">
+        <div class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
           <i class='bx bx-moon' id="themeIcon"></i>
         </div>
         <div class="menu-icon" id="menuIcon" onclick="toggleMobileNav()">
@@ -68,7 +69,7 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section id="home">
     <div class="hero-bg">
       <div class="hero-blob blob1"></div>
@@ -78,19 +79,10 @@
     </div>
     <div class="hero-inner">
       <div class="hero-content">
-        <div class="hero-badge">Full Stack Developer
-          Building scalable web applications</div>
-        <h1>Engineering scalable<br><span class="gradient-text">backend systems</span><br>with AI solutions</h1>
-        <p class="hero-desc">I design production-ready REST APIs, scalable architectures, and AI-powered applications.
-          9+ projects with measurable impact.</p>
         <div class="hero-badge">Full Stack Developer · Django & React · REST APIs · Scalable Systems</div>
         <h1>Building scalable<br><span class="gradient-text">web applications</span><br>end to end</h1>
-
-        <!-- FIX 1: Final job-ready hero description -->
         <p class="hero-desc">I develop and deploy production-ready full-stack applications using Django, React, and REST
           APIs — used by real users and built for scalability.</p>
-
-        <!-- FIX 4: Trust signal / availability -->
         <p class="hero-avail"><i class='bx bx-circle'></i> Available for Full Stack Developer roles &nbsp;|&nbsp;
           Immediate joiner</p>
         <div class="quick-info">
@@ -131,7 +123,7 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
   <section id="about">
     <div class="about-grid">
       <div class="about-img-wrap reveal">
@@ -139,11 +131,10 @@
           <img src="img/logo.jpeg" alt="About S P Darshan" onerror="this.nextElementSibling.style.display='flex'">
           <div class="about-img-placeholder" style="display:none">🖥️</div>
         </div>
-        <!-- FIX 5: Removed "4+ Projects" stat, replaced with "Live Apps" -->
         <div class="about-stats">
           <div class="stat-card">
-            <div class="stat-number">Live</div>
-            <div class="stat-label">Production App</div>
+            <div class="stat-number">1+</div>
+            <div class="stat-label">Live Applications</div>
           </div>
           <div class="stat-card">
             <div class="stat-number">3+</div>
@@ -176,7 +167,7 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- SKILLS SECTION -->
   <section id="skills">
     <div class="skills-header reveal">
       <div class="section-label" style="justify-content:center">Technical Skills</div>
@@ -196,7 +187,6 @@
       <div class="skill-card" data-cat="backend"><i class='bx bxl-flask'></i> Flask</div>
       <div class="skill-card" data-cat="backend"><i class='bx bx-code-alt'></i> Node.js</div>
       <div class="skill-card" data-cat="backend"><i class='bx bx-server'></i> Express.js</div>
-      <!-- MERN added as a stack badge under frontend -->
       <div class="skill-card" data-cat="frontend"><i class='bx bxl-react'></i> React</div>
       <div class="skill-card" data-cat="frontend"><i class='bx bxl-html5'></i> HTML5</div>
       <div class="skill-card" data-cat="frontend"><i class='bx bxl-css3'></i> CSS3</div>
@@ -212,10 +202,9 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS SECTION -->
   <section id="projects">
     <div class="projects-wrap">
-
       <div class="projects-header-row reveal">
         <div>
           <div class="section-label">Projects</div>
@@ -227,10 +216,8 @@
           <i class='bx bxl-github'></i> All on GitHub
         </a>
       </div>
-
       <div class="project-grid reveal">
-
-        <!-- PROJECT 01 : PUNDX (FEATURED) -->
+        <!-- PROJECT 1: PUNDX -->
         <a href="https://www.pundx.co.in/" target="_blank" class="project-card featured">
           <div class="featured-badge">FEATURED</div>
           <div class="project-num">01 · LIVE PROJECT</div>
@@ -244,7 +231,6 @@
             <li>Role-based authentication using secure JWT tokens</li>
             <li>Financial analytics dashboard with PDF reports</li>
           </ul>
-          <!-- FIX 3: Live Production tag -->
           <div class="project-stack">
             <span class="stack-pill">Django REST</span>
             <span class="stack-pill">React</span>
@@ -258,9 +244,8 @@
           </span>
         </a>
 
-        <!-- PROJECT 02 : AI RESUME ANALYZER -->
-        <a href="https://github.com/SnehaKhanaganvi/Ai-Resyme-Alayser-Recuirtment-System-" target="_blank"
-          class="project-card">
+        <!-- PROJECT 2: AI RESUME ANALYZER -->
+        <a href="https://github.com/SnehaKhanaganvi/Ai-Resyme-Alayser-Recuirtment-System-" target="_blank" class="project-card">
           <div class="project-num">02</div>
           <h3>AI Resume Analyzer & Recruitment System</h3>
           <p class="project-desc">
@@ -283,7 +268,7 @@
           <span class="project-link">GitHub →</span>
         </a>
 
-        <!-- PROJECT 03 : Campus Flow -->
+        <!-- PROJECT 3: CAMPUS FLOW -->
         <a href="https://github.com/Mr-APS-22/SDMS_project" target="_blank" class="project-card">
           <div class="project-num">03</div>
           <h3>Campus Flow</h3>
@@ -304,7 +289,7 @@
           <span class="project-link">GitHub →</span>
         </a>
 
-        <!-- PROJECT 04 : Driver Safety AI -->
+        <!-- PROJECT 4: DRIVER SAFETY AI -->
         <a href="https://github.com/spdarshan46/driver-safety-ai" target="_blank" class="project-card">
           <div class="project-num">04</div>
           <h3>Driver Safety AI</h3>
@@ -327,7 +312,6 @@
           </div>
           <span class="project-link">GitHub →</span>
         </a>
-
       </div>
     </div>
   </section>
@@ -374,10 +358,9 @@
             <div class="exp-title">Java Full-Stack Intern</div>
             <div class="exp-place">Inventron</div>
             <span class="exp-badge">Ongoing</span>
-            <!-- FIX 2: Added work detail bullets -->
             <ul class="exp-details">
-              <li>Developed REST APIs and backend modules using Java/Spring</li>
-              <li>Worked on real-world application features and debugging</li>
+              <li>Developed REST APIs and backend modules using Java/Spring improving system efficiency</li>
+              <li>Worked on real-world application features, debugging, and performance improvements</li>
             </ul>
             <div class="location-mini">
               <i class='bx bx-map'></i>
@@ -401,7 +384,7 @@
     </div>
   </div>
 
-  <!-- CONTACT -->
+  <!-- CONTACT SECTION -->
   <section id="contact">
     <div class="contact-wrap">
       <div class="contact-panel">
